@@ -36,12 +36,12 @@ import location from "@/app/assets/location.png";
 const cabinetGrotesk = localFont({
   src: [
     {
-      path: "assets/fonts/CabinetGrotesk-Black.woff",
+      path: "/assets/fonts/CabinetGrotesk-Black.woff",
       weight: "800",
       style: "black",
     },
     {
-      path: "assets/fonts/CabinetGrotesk-ExtraBold.woff",
+      path: "/assets/fonts/CabinetGrotesk-ExtraBold.woff",
       weight: "700",
       style: "extrabold",
     },
