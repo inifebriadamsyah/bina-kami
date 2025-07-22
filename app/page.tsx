@@ -202,7 +202,7 @@ const HeroContent = () => {
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto -top-[2rem] right-[29%]"
+          className="absolute h-20 w-auto -top-[3rem] right-[27%]"
         />
         <Image
           src={mainCloud}
@@ -294,9 +294,9 @@ const HeroContent = () => {
             </h1>
           </div>
 
-          <div className="max-w-[36rem] mt-16 mx-auto">
+          <div className="max-w-[32rem] mt-14 mx-auto">
             <p
-              className={`text-gray-700 text-[1.25rem] font-light tracking-[0.05rem]  ${cabinetGrotesk.className}`}
+              className={`text-gray-600 text-[1.2rem] font-normal tracking-[0.05rem]  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
               mempersiakan calon pengantin agar pernikannya sakinah, mawaddah wa
