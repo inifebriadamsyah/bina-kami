@@ -36,15 +36,15 @@ import location from "@/app/assets/location.png";
 const cabinetGrotesk = localFont({
   src: [
     {
-      path: "/assets/fonts/CabinetGrotesk-Black.woff",
+      path: "assets/fonts/CabinetGrotesk-Black.woff",
       weight: "800",
       style: "black",
     },
-    {
-      path: "/assets/fonts/CabinetGrotesk-ExtraBold.woff",
-      weight: "700",
-      style: "extrabold",
-    },
+    // {
+    //   path: "assets/fonts/CabinetGrotesk-ExtraBold.woff",
+    //   weight: "700",
+    //   style: "extrabold",
+    // },
     {
       path: "assets/fonts/CabinetGrotesk-Bold.woff",
       weight: "600",
@@ -202,13 +202,13 @@ const HeroContent = () => {
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto -top-[1rem] right-[29%]"
+          className="absolute h-20 w-auto -top-[2rem] right-[29%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[4rem] left-[28%]"
+          className="absolute h-16 w-auto top-[2rem] left-[28%]"
         />
         <Image
           src={mainCloud}
@@ -296,7 +296,7 @@ const HeroContent = () => {
 
           <div className="max-w-[36rem] mt-16 mx-auto">
             <p
-              className={`text-gray-700 text-[1.4rem] font-light tracking-[0.05rem]  ${cabinetGrotesk.className}`}
+              className={`text-gray-700 text-[1.25rem] font-light tracking-[0.05rem]  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
               mempersiakan calon pengantin agar pernikannya sakinah, mawaddah wa
