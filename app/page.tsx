@@ -61,7 +61,7 @@ const cabinetGrotesk = localFont({
       style: "light",
     },
     {
-      path: "assets/fonts/CabinetGrotesk-Medium.otf",
+      path: "assets/fonts/CabinetGrotesk-Medium.woff",
       weight: "400",
       style: "medium",
     },
