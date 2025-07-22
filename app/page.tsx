@@ -32,6 +32,7 @@ import male from "@/app/assets/male.png";
 import female from "@/app/assets/female.png";
 import participant from "@/app/assets/participant.png";
 import location from "@/app/assets/location.png";
+import { Testimonials } from "./sections/Testimonials";
 
 const cabinetGrotesk = localFont({
   src: [
@@ -177,7 +178,8 @@ export default function Home() {
       <HeroContent />
       {/* <Hero/> */}
       <ScrollReveal />
-      <FAQ />
+      <Testimonials />
+      {/* <FAQ /> */}
     </div>
   );
 }
@@ -286,7 +288,7 @@ const HeroContent = () => {
             >
               Aplikasi
               <span
-                className={`text-[#4C9E3B] font-bold ${cabinetGrotesk.className}`}
+                className={`text-[#4C9E3B] font-medium ${cabinetGrotesk.className}`}
               >
                 {" "}
                 Bina Kami
