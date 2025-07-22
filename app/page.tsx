@@ -16,6 +16,7 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/app/components/ui/resizable-navbar";
+import Typewriter from "@/app/components/ui/typewriter";
 import {
   motion,
   useScroll,
@@ -33,6 +34,8 @@ import female from "@/app/assets/female.png";
 import participant from "@/app/assets/participant.png";
 import location from "@/app/assets/location.png";
 import { Testimonials } from "./sections/Testimonials";
+import { CallToAction } from "./sections/CallToAction";
+import { Footer } from "./sections/Footer";
 
 const cabinetGrotesk = localFont({
   src: [
@@ -180,6 +183,8 @@ export default function Home() {
       <ScrollReveal />
       <Testimonials />
       {/* <FAQ /> */}
+      <CallToAction />
+      <Footer />
     </div>
   );
 }
@@ -244,7 +249,20 @@ const HeroContent = () => {
             <h1
               className={`md:text-[60px] sm:text-4xl font-semibold tracking-[0.05rem] text-black/70 z-10 ${cabinetGrotesk.className}`}
             >
-              Selamat datang
+              {/* <Typewriter
+                text={[
+                  "Selamat datang di",
+                  "Sugeng rawuh",
+                  "Salamet dhateng",
+                  "مرحباً بكم",
+                ]}
+                speed={70}
+                className="text-black/70 "
+                waitTime={2500}
+                deleteSpeed={40}
+                cursorChar={"_"}
+              /> */}
+              Selamat datang di
             </h1>
             <motion.img
               src={participant.src}
@@ -261,18 +279,13 @@ const HeroContent = () => {
                 ease: "easeInOut",
               }}
             />
-            <h1
-              className={`md:text-[60px] sm:text-4xl font-semibold tracking-[0.05rem] text-black/70 z-10 ${cabinetGrotesk.className}`}
-            >
-              di
-            </h1>
           </div>
           <div className="flex items-center justify-center">
             <motion.img
               src={location.src}
               alt="location"
               height={500}
-              className="h-[102px] w-auto mr-3 md:mt-6"
+              className="h-[102px] w-auto mr-3 md:mt-4"
               animate={{
                 rotate: ["6deg", "-3deg"],
               }}

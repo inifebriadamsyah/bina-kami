@@ -284,7 +284,7 @@ const HeroContent = () => {
 
         <div className="max-w-[36rem] mt-16 mx-auto">
           <p
-            className={`text-gray-700 text-[1.4rem] font-light tracking-[0.05rem]  ${cabinetGrotesk.className}`}
+            className={`text-gray-700 text-[1.4rem] font-light tracking-[0.025rem]  ${cabinetGrotesk.className}`}
           >
             Bina kami adalah aplikasi bimbingan perkawinan online untuk
             mempersiakan calon pengantin agar pernikannya sakinah, mawaddah wa
