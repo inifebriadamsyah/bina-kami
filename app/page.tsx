@@ -117,7 +117,7 @@ export default function Home() {
         src={rightCloud}
         alt="rightCloud"
         height={740}
-        className="h-[18rem] lg:h-[17rem] w-auto absolute top-0 right-0"
+        className="h-[18rem] lg:h-[19rem] w-auto absolute top-0 right-0"
       />
 
       <Navbar>
@@ -214,13 +214,13 @@ const HeroContent = () => {
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[32rem] -right-[4%]"
+          className="absolute h-16 w-auto top-[26rem] -right-[4%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto top-[22rem] -left-[4%]"
+          className="absolute h-20 w-auto top-[22rem] -left-[5%]"
         />
         <Image
           src={mainCloud}
@@ -232,11 +232,11 @@ const HeroContent = () => {
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[46rem] left-[24%]"
+          className="absolute h-16 w-auto top-[36rem] left-[24%]"
         />
       </div>
 
-      <div className="relative container mx-auto p-8 pt-32">
+      <div className="relative container mx-auto p-8 pt-28">
         <div className="container text-center md:max-w-screen-xl md:w-full pb-20 pt-10 mx-auto">
           <div className="flex items-center justify-center">
             <h1
