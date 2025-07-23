@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Lenis from "lenis";
 import { Hero } from "./sections/Hero";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FAQ } from "./sections/FAQ";
 import { ScrollReveal } from "./sections/ScrollReveal";
 import {
@@ -29,6 +29,7 @@ import localFont from "next/font/local";
 import leftCloud from "@/app/assets/left-cloud.png";
 import rightCloud from "@/app/assets/right-cloud.png";
 import mainCloud from "@/app/assets/main-cloud.png";
+import clouds from "@/app/assets/clouds.png";
 import male from "@/app/assets/male.png";
 import female from "@/app/assets/female.png";
 import participant from "@/app/assets/participant.png";
@@ -178,7 +179,7 @@ export default function Home() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      <HeroContent />
+      <Hero/>
       {/* <Hero/> */}
       <ScrollReveal />
       <Testimonials />
@@ -190,6 +191,17 @@ export default function Home() {
 }
 
 const HeroContent = () => {
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+  const backgroundPositionY = useTransform(
+    scrollYProgress,
+    [0, 0.25],
+    [-300, 2300]
+  );
+
   return (
     <div className="relative top-0 min-h-screen">
       <Image
@@ -204,7 +216,25 @@ const HeroContent = () => {
         height={1440}
         className="fixed bottom-0 lg:h-[22rem] z-40 w-auto right-0"
       />
-      <div className="relative w-auto">
+      <motion.img
+        ref={sectionRef}
+        src={clouds.src}
+        alt="clouds"
+        height={1920}
+        className="absolute md:-top-[9.5rem] min-h-full w-auto"
+        style={{
+          backgroundPositionY
+        }}
+        animate={{
+          backgroundPositionX: clouds.width,
+        }}
+        transition={{
+          repeat: Infinity,
+          ease: "linear",
+          duration: 120,
+        }}
+      />
+      <div className="relative w-auto hidden">
         <Image
           src={mainCloud}
           alt="mainCloud"
@@ -268,7 +298,7 @@ const HeroContent = () => {
               src={participant.src}
               alt="participant"
               height={300}
-              className="h-[54px] w-auto mx-4 shadow-md rounded-[36px] shadow-gray-200"
+              className="h-[54px] w-auto mx-4 shadow-md rounded-[36px] shadow-gray-200 origin-left"
               animate={{
                 rotate: ["2deg", "-15deg"],
               }}
@@ -285,14 +315,14 @@ const HeroContent = () => {
               src={location.src}
               alt="location"
               height={500}
-              className="h-[102px] w-auto mr-3 md:mt-4"
+              className="h-[102px] w-auto mr-3 md:mt-4 origin-right"
               animate={{
-                rotate: ["6deg", "-3deg"],
+                rotate: ["2deg", "-3deg"],
               }}
               transition={{
                 repeat: Infinity,
                 repeatType: "mirror",
-                duration: 2,
+                duration: 3,
                 ease: "easeInOut",
               }}
             />
