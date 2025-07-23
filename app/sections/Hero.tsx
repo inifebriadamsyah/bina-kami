@@ -11,17 +11,6 @@ import {
   useAnimate,
 } from "framer-motion";
 
-import {
-  Navbar,
-  NavBody,
-  NavItems,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
-} from "@/app/components/ui/resizable-navbar";
 import localFont from "next/font/local";
 
 import leftCloud from "@/app/assets/left-cloud.png";
@@ -40,11 +29,11 @@ const cabinetGrotesk = localFont({
       weight: "800",
       style: "black",
     },
-    {
-      path: "../assets/fonts/CabinetGrotesk-ExtraBold.woff",
-      weight: "700",
-      style: "extrabold",
-    },
+    // {
+    //   path: "../assets/fonts/CabinetGrotesk-ExtraBold.woff",
+    //   weight: "700",
+    //   style: "extrabold",
+    // },
     {
       path: "../assets/fonts/CabinetGrotesk-Bold.woff",
       weight: "600",
