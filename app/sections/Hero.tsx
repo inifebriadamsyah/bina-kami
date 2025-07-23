@@ -68,16 +68,12 @@ const cabinetGrotesk = localFont({
 });
 
 export const Hero = () => {
-  const sectionRef = useRef(null);
+  const imageRef = useRef<HTMLImageElement>(null);
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
+    target: imageRef,
     offset: ["start end", "end start"],
   });
-  const backgroundPositionY = useTransform(
-    scrollYProgress,
-    [0, 0.25],
-    [-300, 2300]
-  );
+  const translatingYY = useTransform(scrollYProgress, [0, 1], [-200, 200]);
 
   return (
     <div className="relative top-0 min-h-screen">
@@ -96,10 +92,13 @@ export const Hero = () => {
 
       <motion.img
         src={clouds.src}
-        ref={sectionRef}
+        ref={imageRef}
         alt="clouds"
         height={1920}
-        className="absolute md:-top-[4.5rem] md:left-0 min-h-full w-auto scale-105"
+        className="absolute md:-top-[6.5rem] md:left-0 min-h-full w-auto scale-105"
+        style={{
+          translateY: translatingYY,
+        }}
         animate={{
           translateX: [-25, 200],
         }}
@@ -107,7 +106,7 @@ export const Hero = () => {
           repeat: Infinity,
           repeatType: "mirror",
           ease: "linear",
-          duration: 72,
+          duration: 24,
         }}
       />
       <div className="relative w-auto hidden">
