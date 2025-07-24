@@ -16,11 +16,11 @@ export const ScrollReveal = () => {
   const words = paragraph.split(" ");
   return (
     <div className="relative w-full bg-white py-28">
-      <div className="container">
-        <div className="sticky top-24 md:top-28 lg:top-40 bg-white/10 overflow-hidden flex justify-center">
+      <div className="container mx-auto">
+        <div className="sticky top-24 md:top-28 lg:top-40 bg-white/10 overflow-hidden flex justify-center mx-auto">
           <p
             // ref={targetRef}
-            className=" text-6xl p-10 max-w-3xl text-black/70 tracking-tight font-semibold flex flex-wrap "
+            className=" text-5xl p-10 max-w-3xl text-black/70 tracking-tight font-semibold flex flex-wrap"
           >
             {words.map((word, i) => {
               const start = i / words.length;

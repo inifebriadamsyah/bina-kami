@@ -142,10 +142,11 @@ export const Testimonials = () => {
       <div className="flex flex-col gap-10 md:w-full md:pb-20 md:pt-16 px-12 items-center text-center">
         <div className="pt-10">
           <h1 className={`md:text-4xl text-5xl font-regular text-gray-700 tracking-tight font-medium`}>
-            What our customers say
+            Testimoni peserta {" "}
+            <span className="font-semibold">Bina Kami</span>
           </h1>
           <h5 className="font-normal text-lg md:my-4 my-4 text-gray-700 tracking-tight">
-            Thousands of happy customers that changed their energy use
+            Peserta Bina Kami mendapatkan berbagai ilmu setelah memanfaatkan aplikasi bina kami.
           </h5>
         </div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(180deg,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
