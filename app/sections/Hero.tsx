@@ -148,7 +148,7 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="relative container mx-auto md:p-8 px-8 md:pt-28 pt-10">
+      <div className="relative container mx-auto md:p-8 px-8 md:pt-28 pt-14">
         <div className="container text-center md:max-w-screen-xl md:w-full pb-20 pt-10 mx-auto">
           <div className="flex items-center justify-center">
             <h1

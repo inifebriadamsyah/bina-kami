@@ -116,13 +116,13 @@ export default function Home() {
         src={leftCloud}
         alt="leftCloud"
         height={944}
-        className="h-[9.5rem] w-auto lg:h-[20rem] lg:w-auto absolute top-0 left-0"
+        className="h-[9.75rem] w-auto lg:h-[20rem] lg:w-auto absolute top-0 left-0"
       />
       <Image
         src={rightCloud}
         alt="rightCloud"
         height={740}
-        className="h-[9rem] w-auto lg:h-[19rem] lg:w-auto absolute top-0 right-0"
+        className="h-[9.25rem] w-auto lg:h-[19rem] lg:w-auto absolute top-0 right-0"
       />
 
       <Navbar>
