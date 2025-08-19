@@ -12,7 +12,7 @@ export const ScrollReveal = () => {
 
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
-  const paragraph ="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.";
+  const paragraph ="Bimbingan perkawinan secara pembelajaran online (e-learning), melibatkan narasumber profesional seperti penghulu, penyuluh, dan dokter. Layanan ini gratis dan bertujuan mendukung ketahanan keluarga serta menurunkan angka perceraian di Kota Madiun.";
   const words = paragraph.split(" ");
   return (
     <div className="relative w-full bg-white py-28">
@@ -20,7 +20,7 @@ export const ScrollReveal = () => {
         <div className="sticky top-24 md:top-28 lg:top-40 bg-white/10 overflow-hidden flex justify-center mx-auto">
           <p
             // ref={targetRef}
-            className=" text-5xl p-10 max-w-3xl text-black/70 tracking-tight font-semibold flex flex-wrap"
+            className=" text-3xl p-10 max-w-3xl text-black/60 tracking-tight font-semibold flex flex-wrap"
           >
             {words.map((word, i) => {
               const start = i / words.length;

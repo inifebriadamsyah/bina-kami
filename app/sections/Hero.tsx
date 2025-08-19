@@ -216,10 +216,10 @@ export const Hero = () => {
 
           <div className="max-w-[32rem] mt-14 mx-auto">
             <p
-              className={`text-gray-600 md:text-[1.2rem] font-normal tracking-[0.05rem]  ${cabinetGrotesk.className}`}
+              className={`text-gray-600 md:text-[1.2rem] font-normal tracking-normal  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
-              mempersiakan calon pengantin agar pernikannya sakinah, mawaddah wa
+              mempersiakan calon pengantin di Kota Madiun agar pernikannya sakinah, mawaddah wa
               rahmah.
             </p>
             <button

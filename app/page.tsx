@@ -344,7 +344,7 @@ const HeroContent = () => {
               className={`text-gray-600 text-[1.2rem] font-normal tracking-[0.05rem]  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
-              mempersiakan calon pengantin agar pernikannya sakinah, mawaddah wa
+              mempersiakan calon pengantin di Kota Madiun agar pernikannya sakinah, mawaddah wa
               rahmah.
             </p>
             <button
