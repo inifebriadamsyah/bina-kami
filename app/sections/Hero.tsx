@@ -81,13 +81,13 @@ export const Hero = () => {
         src={male}
         alt="male"
         height={1440}
-        className="fixed bottom-0 lg:h-[22rem] z-40 w-auto left-0"
+        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto left-0"
       />
       <Image
         src={female}
         alt="female"
         height={1440}
-        className="fixed bottom-0 lg:h-[22rem] z-40 w-auto right-0"
+        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto right-0"
       />
 
       <motion.img
@@ -95,7 +95,7 @@ export const Hero = () => {
         ref={imageRef}
         alt="clouds"
         height={1920}
-        className="absolute md:-top-[6.5rem] md:left-0 min-h-full w-auto scale-105"
+        className="absolute md:-top-[6.5rem] md:left-0 min-h-full w-auto scale-105 hidden md:block"
         style={{
           translateY: translatingYY,
         }}
@@ -114,37 +114,37 @@ export const Hero = () => {
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto -top-[3rem] right-[27%]"
+          className="absolute md:h-20 md:w-auto h-3 w-auto -top-[3rem] right-[27%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[2rem] left-[28%]"
+          className="absolute md:h-16 md:w-auto h-3 w-auto top-[2rem] left-[28%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[26rem] -right-[4%]"
+          className="absolute md:h-16 md:w-auto h-3 w-auto top-[26rem] -right-[4%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto top-[22rem] -left-[5%]"
+          className="absolute md:h-20 md:w-auto h-3 w-auto top-[22rem] -left-[5%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto top-[39rem] right-[19%]"
+          className="absolute md:h-20 md:w-auto h-3 w-auto top-[39rem] right-[19%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[36rem] left-[24%]"
+          className="absolute md:h-16 md:w-auto h-3 w-auto top-[36rem] left-[24%]"
         />
       </div>
 
@@ -152,7 +152,7 @@ export const Hero = () => {
         <div className="container text-center md:max-w-screen-xl md:w-full pb-20 pt-10 mx-auto">
           <div className="flex items-center justify-center">
             <h1
-              className={`md:text-[60px] sm:text-4xl font-semibold tracking-[0.05rem] text-black/70 z-10 ${cabinetGrotesk.className}`}
+              className={`md:text-[60px] text-3xl font-semibold tracking-[0.05rem] text-black/70 z-10 ${cabinetGrotesk.className}`}
             >
               {/* <Typewriter
                     text={[
@@ -173,7 +173,7 @@ export const Hero = () => {
               src={participant.src}
               alt="participant"
               height={300}
-              className="h-[54px] w-auto mx-4 shadow-md rounded-[36px] shadow-gray-200 origin-left"
+              className="md:h-[54px] md:w-auto h-14 mx-4 shadow-md rounded-[36px] shadow-gray-200 origin-left hidden md:block"
               animate={{
                 rotate: ["2deg", "-15deg"],
               }}
@@ -185,12 +185,12 @@ export const Hero = () => {
               }}
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="md:flex md:items-center justify-center">
             <motion.img
               src={location.src}
               alt="location"
               height={500}
-              className="h-[102px] w-auto mr-3 md:mt-4 origin-right"
+              className="md:h-[102px] md:w-auto h-24 w-auto mr-3 md:mt-4 mt-6 origin-right hidden md:block"
               animate={{
                 rotate: ["2deg", "-3deg"],
               }}
@@ -202,7 +202,7 @@ export const Hero = () => {
               }}
             />
             <h1
-              className={`md:text-[64px] sm:text-4xl font-semibold tracking-[0.05rem] text-[#FF990A] z-10 ${cabinetGrotesk.className}`}
+              className={`md:text-[64px] text-3xl font-semibold tracking-[0.05rem] text-[#FF990A] z-10 ${cabinetGrotesk.className}`}
             >
               Aplikasi
               <span
@@ -216,7 +216,7 @@ export const Hero = () => {
 
           <div className="max-w-[32rem] mt-14 mx-auto">
             <p
-              className={`text-gray-600 text-[1.2rem] font-normal tracking-[0.05rem]  ${cabinetGrotesk.className}`}
+              className={`text-gray-600 md:text-[1.2rem] font-normal tracking-[0.05rem]  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
               mempersiakan calon pengantin agar pernikannya sakinah, mawaddah wa
@@ -231,7 +231,7 @@ export const Hero = () => {
                 Gabung Sekarang!
               </div>
             </button>
-            <p className="mt-10 font-medium text-base text-gray-700">
+            <p className="mt-10 font-medium md:text-base text-gray-700 text-[.925rem]">
               Bimwin Virtual Kemenag Kota Madiun
               <span className="font-bold text-[#f28d00]"> versi 1.0</span>
             </p>

@@ -116,13 +116,13 @@ export default function Home() {
         src={leftCloud}
         alt="leftCloud"
         height={944}
-        className="h-[20rem] lg:h-[20rem] w-auto absolute top-0 left-0"
+        className="h-[11rem] w-auto lg:h-[20rem] lg:w-auto absolute top-0 left-0"
       />
       <Image
         src={rightCloud}
         alt="rightCloud"
         height={740}
-        className="h-[18rem] lg:h-[19rem] w-auto absolute top-0 right-0"
+        className="h-[10rem] w-auto lg:h-[19rem] lg:w-auto absolute top-0 right-0"
       />
 
       <Navbar>
@@ -155,15 +155,15 @@ export default function Home() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                className="relative text-neutral-600 dark:text-gray-600 mx-3"
               >
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
+            <div className="flex w-full flex-col gap-4 mt-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
+                variant="secondary"
                 className="w-full"
               >
                 Panduan
@@ -239,37 +239,37 @@ const HeroContent = () => {
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto -top-[3rem] right-[27%]"
+          className="absolute md:h-20 md:w-auto h-2 w-auto -top-[3rem] right-[27%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[2rem] left-[28%]"
+          className="absolute md:h-16 md:w-auto h-2 w-auto top-[2rem] left-[28%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[26rem] -right-[4%]"
+          className="absolute md:h-16 md:w-auto h-2 w-auto top-[26rem] -right-[4%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto top-[22rem] -left-[5%]"
+          className="absolute md:h-20 md:w-auto h-2 w-auto top-[22rem] -left-[5%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-20 w-auto top-[39rem] right-[19%]"
+          className="absolute md:h-20 md:w-auto h-2 w-auto top-[39rem] right-[19%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute h-16 w-auto top-[36rem] left-[24%]"
+          className="absolute md:h-16 md:w-auto h-2 w-auto top-[36rem] left-[24%]"
         />
       </div>
 
@@ -277,7 +277,7 @@ const HeroContent = () => {
         <div className="container text-center md:max-w-screen-xl md:w-full pb-20 pt-10 mx-auto">
           <div className="flex items-center justify-center">
             <h1
-              className={`md:text-[60px] sm:text-4xl font-semibold tracking-[0.05rem] text-black/70 z-10 ${cabinetGrotesk.className}`}
+              className={`md:text-[60px] sm:text-5xl font-semibold tracking-[0.05rem] text-black/70 z-10 ${cabinetGrotesk.className}`}
             >
               {/* <Typewriter
                 text={[
