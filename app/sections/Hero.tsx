@@ -81,13 +81,13 @@ export const Hero = () => {
         src={male}
         alt="male"
         height={1440}
-        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto left-0"
+        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:left-0 -left-16"
       />
       <Image
         src={female}
         alt="female"
         height={1440}
-        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto right-0"
+        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:right-0 -right-16"
       />
 
       <motion.img
@@ -114,41 +114,41 @@ export const Hero = () => {
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute md:h-20 md:w-auto h-3 w-auto -top-[3rem] right-[27%]"
+          className="absolute h-6 w-auto -top-[8rem] right-[27%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute md:h-16 md:w-auto h-3 w-auto top-[2rem] left-[28%]"
+          className="absolute h-6 w-auto top-[2rem] left-[28%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute md:h-16 md:w-auto h-3 w-auto top-[26rem] -right-[4%]"
+          className="absolute h-6 w-auto top-[26rem] -right-[4%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute md:h-20 md:w-auto h-3 w-auto top-[22rem] -left-[5%]"
+          className="absolute h-6 w-auto top-[22rem] -left-[5%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute md:h-20 md:w-auto h-3 w-auto top-[39rem] right-[19%]"
+          className="absolute h-6 w-auto top-[39rem] right-[19%]"
         />
         <Image
           src={mainCloud}
           alt="mainCloud"
           height={572}
-          className="absolute md:h-16 md:w-auto h-3 w-auto top-[36rem] left-[24%]"
+          className="absolute h-6 w-auto top-[36rem] left-[24%]"
         />
       </div>
 
-      <div className="relative container mx-auto p-8 pt-28">
+      <div className="relative container mx-auto md:p-8 px-8 md:pt-28 pt-10">
         <div className="container text-center md:max-w-screen-xl md:w-full pb-20 pt-10 mx-auto">
           <div className="flex items-center justify-center">
             <h1
@@ -214,24 +214,24 @@ export const Hero = () => {
             </h1>
           </div>
 
-          <div className="max-w-[32rem] mt-14 mx-auto">
+          <div className="max-w-[32rem] md:mt-14 mt-10 mx-auto">
             <p
-              className={`text-gray-600 md:text-[1.2rem] font-normal tracking-normal  ${cabinetGrotesk.className}`}
+              className={`text-gray-600 md:text-[1.2rem] text-[0.975rem] font-normal tracking-normal  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
               mempersiakan calon pengantin di Kota Madiun agar pernikannya sakinah, mawaddah wa
               rahmah.
             </p>
             <button
-              className={`px-8 p-4 rounded-full mt-16 font-normal tracking-wide text-xl bg-[#FF990A] cursor-pointer border-4 border-[#CE7F11] text-white w-fit ${cabinetGrotesk.className} shadow-[6px_6px_0px_rgba(206,_127,_17,_0.925)] hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all duration-350 `}
+              className={`md:px-8 md:py-4 px-6 py-3 rounded-full md:mt-16 mt-12 font-normal tracking-wide md:text-xl text-base bg-[#FF990A] cursor-pointer border-4 border-[#CE7F11] text-white w-fit ${cabinetGrotesk.className} shadow-[6px_6px_0px_rgba(206,_127,_17,_0.925)] hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all duration-350 `}
             >
               {" "}
               <div className="flex items-center">
-                <div className="h-4 w-4 border-white border-[3px] rounded-full mr-4"></div>
+                <div className="md:h-4 md:w-4 h-3 w-3 border-white md:border-[3px] border-[2px] rounded-full mr-4 mb-1 md:mb-0"></div>
                 Gabung Sekarang!
               </div>
             </button>
-            <p className="mt-10 font-medium md:text-base text-gray-700 text-[.925rem]">
+            <p className="mt-10 font-medium md:text-base text-gray-700 text-[.875rem]">
               Bimwin Virtual Kemenag Kota Madiun
               <span className="font-bold text-[#f28d00]"> versi 1.0</span>
             </p>

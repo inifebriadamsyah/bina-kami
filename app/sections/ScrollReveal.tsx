@@ -20,7 +20,7 @@ export const ScrollReveal = () => {
         <div className="sticky top-24 md:top-28 lg:top-40 bg-white/10 overflow-hidden flex justify-center mx-auto">
           <p
             // ref={targetRef}
-            className=" text-3xl p-10 max-w-3xl text-black/60 tracking-tight font-semibold flex flex-wrap"
+            className="md:text-3xl text-lg p-10 max-w-3xl text-black/60 tracking-tight font-semibold flex flex-wrap"
           >
             {words.map((word, i) => {
               const start = i / words.length;
