@@ -17,7 +17,7 @@ export const ScrollReveal = () => {
   return (
     <div className="relative w-full bg-white py-28">
       <div className="container mx-auto">
-        <div className="sticky top-24 md:top-28 lg:top-40 bg-white/10 overflow-hidden flex justify-center mx-auto">
+        <div className="sticky top-24 md:top-40 lg:top-40 bg-white/10 overflow-hidden flex justify-center mx-auto">
           <p
             // ref={targetRef}
             className="md:text-3xl text-lg md:p-10 p-14 max-w-3xl text-black/60 tracking-tight font-semibold flex flex-wrap"

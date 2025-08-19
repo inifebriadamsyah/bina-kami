@@ -69,11 +69,11 @@ const cabinetGrotesk = localFont({
 
 export const Hero = () => {
   const imageRef = useRef<HTMLImageElement>(null);
-  const { scrollYProgress } = useScroll({
+  const { scrollYProgress: scrollYProgress1 } = useScroll({
     target: imageRef,
     offset: ["start end", "end start"],
   });
-  const translatingYY = useTransform(scrollYProgress, [0, 1], [-200, 200]);
+  const translatingYY = useTransform(scrollYProgress1, [0, 1], [-200, 200]);
 
   return (
     <div className="relative top-0 min-h-screen">
@@ -219,8 +219,8 @@ export const Hero = () => {
               className={`text-gray-600 md:text-[1.2rem] text-[0.975rem] font-normal tracking-normal  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
-              mempersiakan calon pengantin di Kota Madiun agar pernikannya sakinah, mawaddah wa
-              rahmah.
+              mempersiakan calon pengantin di Kota Madiun agar pernikannya
+              sakinah, mawaddah wa rahmah.
             </p>
             <button
               className={`md:px-8 md:py-4 px-6 py-3 rounded-full md:mt-16 mt-12 font-normal tracking-wide md:text-xl text-base bg-[#FF990A] cursor-pointer border-4 border-[#CE7F11] text-white w-fit ${cabinetGrotesk.className} shadow-[6px_6px_0px_rgba(206,_127,_17,_0.925)] hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all duration-350 `}

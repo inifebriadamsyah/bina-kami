@@ -110,8 +110,26 @@ export default function Home() {
     requestAnimationFrame(raf);
   }, []);
 
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [0, 0.225],
+    ["#F5F9EE", "#FFFFFF"]
+  );
+
   return (
-    <div className="relative w-full min-h-screen bg-[#F5F9EE] overflow-x-clip">
+    <motion.div
+      ref={containerRef}
+      className="relative w-full min-h-screen overflow-x-clip"
+      style={{ backgroundColor }}
+      >
+
       <Image
         src={leftCloud}
         alt="leftCloud"
@@ -186,7 +204,7 @@ export default function Home() {
       {/* <FAQ /> */}
       <CallToAction />
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

@@ -167,7 +167,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-2 py-5 lg:hidden",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-1.5 py-3.5 lg:hidden",
         visible && "bg-white/80 dark:bg-white/80",
         className,
       )}
