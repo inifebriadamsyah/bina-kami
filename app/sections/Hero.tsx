@@ -95,7 +95,7 @@ export const Hero = () => {
         ref={imageRef}
         alt="clouds"
         height={1920}
-        className="absolute md:-top-[6.5rem] md:left-0 min-h-full w-auto scale-105 hidden md:block"
+        className="absolute md:-top-[6.5rem] -top-1 md:left-0 md:min-h-full md:w-auto lg:scale-105 md:scale-90 block md:object-cover h-[25rem] w-full object-cover"
         style={{
           translateY: translatingYY,
         }}
