@@ -74,26 +74,9 @@ export const Hero = () => {
     offset: ["start end", "end start"],
   });
   const translatingYY = useTransform(scrollYProgress, [0, 1], [-200, 200]);
-  const translatingXmale = useTransform(scrollYProgress, [0, 0.75], [600, -275]);
-  const translatingXfemale = useTransform(scrollYProgress, [0, 0.75], [-600, 275]);
-
 
   return (
     <div className="relative top-0 min-h-screen">
-      <motion.img
-        src={male.src}
-        alt="male"
-        height={1440}
-        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:left-0 -left-16"
-        style={{ translateX : translatingXmale, }}
-      />
-      <motion.img
-        src={female.src}
-        alt="female"
-        height={1440}
-        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:right-0 -right-16"
-        style={{ translateX : translatingXfemale }}
-      />
 
       <motion.img
         src={clouds.src}

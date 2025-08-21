@@ -123,6 +123,9 @@ export default function Home() {
     ["#F5F9EE", "#FFFFFF"]
   );
 
+  const translatingXmale = useTransform(scrollYProgress, [0.19, 0.35], [20, 605]);
+  const translatingXfemale = useTransform(scrollYProgress, [0.19, 0.35], [-20, -605]);
+
   return (
     <motion.div
       ref={containerRef}
@@ -142,6 +145,20 @@ export default function Home() {
         height={740}
         className="h-[9.25rem] w-auto lg:h-[19rem] lg:w-auto absolute top-0 right-0"
       />
+      <motion.img
+              src={male.src}
+              alt="male"
+              height={787}
+              className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:left-0 -left-16"
+              style={{ translateX : translatingXmale, }}
+            />
+            <motion.img
+              src={female.src}
+              alt="female"
+              height={787}
+              className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:right-0 -right-16"
+              style={{ translateX : translatingXfemale }}
+            />
 
       <Navbar>
         {/* Desktop Navigation */}
