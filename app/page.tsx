@@ -37,6 +37,7 @@ import location from "@/app/assets/location.png";
 import { Testimonials } from "./sections/Testimonials";
 import { CallToAction } from "./sections/CallToAction";
 import { Footer } from "./sections/Footer";
+import { ProductShowcase } from "./sections/ProductShowcase";
 
 const cabinetGrotesk = localFont({
   src: [
@@ -119,20 +120,38 @@ export default function Home() {
 
   const backgroundColor = useTransform(
     scrollYProgress,
-    [0.125, 0.220],
+    [0.125, 0.22],
     ["#F5F9EE", "#FFFFFF"]
   );
 
-  const translatingXmale = useTransform(scrollYProgress, [0.19, 0.35], [20, 605]);
-  const translatingXfemale = useTransform(scrollYProgress, [0.19, 0.35], [-20, -605]);
+  const translatingXmale = useTransform(
+    scrollYProgress,
+    [0.19, 0.31],
+    [20, 600]
+  );
+  const translatingXfemale = useTransform(
+    scrollYProgress,
+    [0.19, 0.31],
+    [-20, -600]
+  );
+
+  const translatingYmale = useTransform(
+    scrollYProgress,
+    [0.475, 0.61],
+    [0, 600]
+  );
+  const translatingYfemale = useTransform(
+    scrollYProgress,
+    [0.475, 0.61],
+    [0, 600]
+  );
 
   return (
     <motion.div
       ref={containerRef}
       className="relative w-full min-h-screen overflow-x-clip"
       style={{ backgroundColor }}
-      >
-
+    >
       <Image
         src={leftCloud}
         alt="leftCloud"
@@ -146,19 +165,22 @@ export default function Home() {
         className="h-[9.25rem] w-auto lg:h-[19rem] lg:w-auto absolute top-0 right-0"
       />
       <motion.img
-              src={male.src}
-              alt="male"
-              height={787}
-              className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:left-0 -left-16"
-              style={{ translateX : translatingXmale, }}
-            />
-            <motion.img
-              src={female.src}
-              alt="female"
-              height={787}
-              className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:right-0 -right-16"
-              style={{ translateX : translatingXfemale }}
-            />
+        src={male.src}
+        alt="male"
+        height={787}
+        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:left-0 -left-16"
+        style={{ translateX: translatingXmale, translateY: translatingYmale }}
+      />
+      <motion.img
+        src={female.src}
+        alt="female"
+        height={787}
+        className="fixed bottom-0 lg:h-[22rem] h-[12rem] z-40 w-auto md:right-0 -right-16"
+        style={{
+          translateX: translatingXfemale,
+          translateY: translatingYfemale,
+        }}
+      />
 
       <Navbar>
         {/* Desktop Navigation */}
@@ -214,9 +236,10 @@ export default function Home() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      <Hero/>
+      <Hero />
       {/* <Hero/> */}
       <ScrollReveal />
+      <ProductShowcase />
       <Testimonials />
       {/* <FAQ /> */}
       <CallToAction />
@@ -258,7 +281,7 @@ const HeroContent = () => {
         height={1920}
         className="absolute md:-top-[9.5rem] min-h-full w-auto"
         style={{
-          backgroundPositionY
+          backgroundPositionY,
         }}
         animate={{
           backgroundPositionX: clouds.width,
@@ -379,8 +402,8 @@ const HeroContent = () => {
               className={`text-gray-600 text-[1.2rem] font-normal tracking-[0.05rem]  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
-              mempersiakan calon pengantin di Kota Madiun agar pernikannya sakinah, mawaddah wa
-              rahmah.
+              mempersiakan calon pengantin di Kota Madiun agar pernikannya
+              sakinah, mawaddah wa rahmah.
             </p>
             <button
               className={`px-8 p-4 rounded-full mt-16 font-normal tracking-wide text-xl bg-[#FF990A] cursor-pointer border-4 border-[#CE7F11] text-white w-fit ${cabinetGrotesk.className} shadow-[6px_6px_0px_rgba(206,_127,_17,_0.925)] hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all duration-350 `}
