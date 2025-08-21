@@ -137,12 +137,12 @@ export default function Home() {
 
   const translatingYmale = useTransform(
     scrollYProgress,
-    [0.475, 0.61],
+    [0.475, 0.6],
     [0, 600]
   );
   const translatingYfemale = useTransform(
     scrollYProgress,
-    [0.475, 0.61],
+    [0.475, 0.6],
     [0, 600]
   );
 

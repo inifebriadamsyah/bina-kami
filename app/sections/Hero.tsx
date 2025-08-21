@@ -207,7 +207,7 @@ export const Hero = () => {
               className={`text-gray-600 md:text-[1.2rem] text-[0.975rem] font-normal tracking-normal  ${cabinetGrotesk.className}`}
             >
               Bina kami adalah aplikasi bimbingan perkawinan online untuk
-              mempersiakan calon pengantin di Kota Madiun agar pernikannya
+              mempersiakan calon pengantin di <span className="text-[#f28d00]">Kota Madiun</span>  agar pernikannya
               sakinah, mawaddah wa rahmah.
             </p>
             <button

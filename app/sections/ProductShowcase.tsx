@@ -24,7 +24,7 @@ export const ProductShowcase = () => {
           <p className="text-xl text-start text-gray-600 mt-5">
             Bimbingan perkawinan secara pembelajaran online (e-learning),
             melibatkan narasumber profesional seperti penghulu, penyuluh, dan
-            dokter. Layanan ini gratis dan bertujuan mendukung ketahanan
+            ahli lainnya. Layanan ini gratis dan bertujuan mendukung ketahanan
             keluarga serta menurunkan angka perceraian di Kota Madiun.
           </p>
         </div>
@@ -32,7 +32,7 @@ export const ProductShowcase = () => {
           style={{
             opacity: opacity,
             rotateX: rotateX,
-            transformPerspective: "800px",
+            transformPerspective: "900px",
           }}
         >
           <Image
